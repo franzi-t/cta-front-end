@@ -6,7 +6,7 @@
           :class="{ 'open': !visible }"
           src="../assets/icon expand.svg">
       
-      <h2 class="headlien-h-2-strong">Level</h2>
+      <h2 class="headlien-h-2-strong">Level {{levelCount}} </h2>
     </div>
 
     <div v-if="visible" class="question-div">
@@ -18,6 +18,7 @@ Which radioactive category belongs this product to?
     <div class="input-container">
       <input class="input" placeholder="Your answer" type="text">
       <img
+      @click="advanceLevel"
       src="../assets/Button Answer active.svg"
       class="oval-29-copy">
 
@@ -33,9 +34,20 @@ export default {
       visible: true
     }
   },
+
+  computed: {
+    levelCount () { return this.$store.state.levelCount }
+  },
+
   methods: {
     toggle () {
       this.visible = !this.visible
+    },
+
+    advanceLevel () {
+      this.$store.dispatch('advanceLevel').then(() => {
+
+      })
     }
   }
 }

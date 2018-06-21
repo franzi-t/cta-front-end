@@ -1,6 +1,6 @@
 <template id="playground">
   <div class="rectangle-11-copy">
-    
+
   </div>
 </template>
 

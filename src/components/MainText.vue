@@ -18,7 +18,7 @@ Which radioactive category belongs this product to?
     <div class="input-container">
       <input class="input" placeholder="Your answer" type="text">
       <img
-      src="../assets/Button Answer default.svg"
+      src="../assets/Button Answer active.svg"
       class="oval-29-copy">
 
     </div>
@@ -28,6 +28,11 @@ Which radioactive category belongs this product to?
 
 <script>
 export default {
+  data () {
+    return {
+      visible: true
+    }
+  },
   methods: {
     toggle () {
       this.visible = !this.visible

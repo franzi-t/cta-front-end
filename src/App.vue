@@ -17,7 +17,7 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: ;
   height: 100vh;
   width: 100%;
   -webkit-font-smoothing: antialiased;

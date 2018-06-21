@@ -20,7 +20,7 @@
 .logo {	
   float: left;
   padding-top: 20px;
-  height: 38px;
-  width: 33px;
+  height: 36.57px;	
+  width: 32px;
 }
 </style>

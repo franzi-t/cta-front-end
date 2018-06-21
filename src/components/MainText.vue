@@ -57,8 +57,8 @@ export default {
 
 .btn-bg {
   margin-top: 9px;
-	height: 26px;
-	width: 26px;
+	height: 29px;
+	width: 29px;
   &:hover{
     cursor: pointer;
   }
@@ -70,7 +70,7 @@ export default {
 .headlien-h-2-strong {
 	color: #FFFFFF;
 	font-family: "Open Sans";
-	font-size: 16px;
+	font-size: 17px;
   font-weight: bold;
   padding-left: 16px;
 }

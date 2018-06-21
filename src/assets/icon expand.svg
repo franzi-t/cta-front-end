@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="29px" viewBox="0 0 28 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Controll</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,24 C18.627417,24 24,18.627417 24,12 C24,5.372583 18.627417,0 12,0 C5.372583,0 0,5.372583 0,12 C0,18.627417 5.372583,24 12,24 Z" id="path-1"></path>
+        <filter x="-15.6%" y="-15.6%" width="131.2%" height="131.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="0.75" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M13.8771368,5.41019307 L13.2761263,4.80415387 C13.1960421,4.7232241 13.1037895,4.68288659 12.9994947,4.68288659 C12.8954526,4.68288659 12.8032421,4.7232241 12.7231579,4.80415387 L7.99856842,9.56835311 L3.27418947,4.80428126 C3.19406316,4.72335148 3.10185263,4.68301397 2.99768421,4.68301397 C2.89347368,4.68301397 2.80126316,4.72335148 2.72117895,4.80428126 L2.12025263,5.41036291 C2.04,5.49112285 2,5.58411141 2,5.68920123 C2,5.79420613 2.04012632,5.8871947 2.12025263,5.96795464 L7.72206316,11.6171588 C7.80214737,11.6979612 7.8944,11.7383411 7.99856842,11.7383411 C8.10273684,11.7383411 8.19482105,11.6979612 8.27486316,11.6171588 L13.8771368,5.96795464 C13.9572211,5.88715224 13.9970105,5.79416367 13.9970105,5.68920123 C13.9970105,5.58411141 13.9572211,5.49112285 13.8771368,5.41019307 L13.8771368,5.41019307 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CT-Action-Screen-Active-" transform="translate(-184.000000, -33.000000)">
+            <g id="Template-/-Main-Screen-/-White-/-Subnavi">
+                <g id="Header" transform="translate(35.000000, 24.000000)">
+                    <g id="Component-/-Action-/-BTN-/-Icon-/-24px-/-Default" transform="translate(151.000000, 12.000000)">
+                        <g id="BTN-BG">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Component-/-icon-/-16px-/-angle-/-down" transform="translate(4.000000, 4.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="shape" fill="#000000" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <g id="Component-/-.Design-token-/-Color-/-Black" mask="url(#mask-4)" fill="#333333" fill-rule="evenodd">
+                                <rect id="Base" x="0" y="0" width="15.920398" height="15.920398"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

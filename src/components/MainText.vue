@@ -18,15 +18,9 @@ Which radioactive category belongs this product to?
     <div class="input-container">
       <input class="input" placeholder="Your answer" type="text">
       <img
-      v-if="!clicked"
-      @click="clicked = true"
-      src="../assets/Button Answer active.svg"
+      src="../assets/Button Answer default.svg"
       class="oval-29-copy">
 
-      <!-- <img 
-      v-else
-      class="clicked"
-      src="../assets/Button Answer default.svg"> -->
     </div>
   </div> 
 
@@ -34,12 +28,6 @@ Which radioactive category belongs this product to?
 
 <script>
 export default {
-  data () {
-    return {
-      visible: true,
-      clicked: false
-    }
-  },
   methods: {
     toggle () {
       this.visible = !this.visible

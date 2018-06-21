@@ -17,9 +17,17 @@ Which radioactive category belongs this product to?
     </div>
     <div class="input-container">
       <input class="input" placeholder="Your answer" type="text">
-      <img src="../assets/Button Answer default.svg" class="oval-29-copy">    
-    </div>
+      <img
+      v-if="!clicked"
+      @click="clicked = true"
+      src="../assets/Button Answer active.svg"
+      class="oval-29-copy">
 
+      <!-- <img 
+      v-else
+      class="clicked"
+      src="../assets/Button Answer default.svg"> -->
+    </div>
   </div> 
 
 </template>
@@ -28,7 +36,8 @@ Which radioactive category belongs this product to?
 export default {
   data () {
     return {
-      visible: true
+      visible: true,
+      clicked: false
     }
   },
   methods: {
@@ -97,7 +106,7 @@ input{
   border: 1px solid #AFAFAF;	
   border-radius: 6px;
   background-color: transparent;
-  margin-right: 10px;
+  margin-right: 21px;
   font-size: 16px;
   padding-left: 5px;
   color: white;
@@ -118,15 +127,12 @@ input::placeholder {
   padding-left: 5px;
 }
 
-
-
 .oval-29-copy {
-	height: 32px;
-	width: 32px;
+  height: 32px;	
+  width: 32px;
   &:hover{
     cursor: pointer;
   }
 }
-
 
 </style>

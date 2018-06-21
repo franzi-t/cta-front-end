@@ -98,6 +98,14 @@ input{
   border-radius: 6px;
   background-color: transparent;
   margin-right: 10px;
+  font-size: 16px;
+  padding-left: 5px;
+  color: white;
+  &:focus { 
+  outline: none;
+  border: 1px solid #52CEBF;
+  color: white;
+}
 }
 
 input::placeholder {
@@ -107,17 +115,10 @@ input::placeholder {
   font-family: "Open Sans";	
   font-size: 13px;	
   line-height: 18px;
-  padding-left: 10px;
-  
+  padding-left: 5px;
 }
 
-input:focus { 
-  outline: none;
-  border: 1px solid #52CEBF;
-  font-size: 16px;
-  color: white;
-  padding-left: 10px;
-}
+
 
 .oval-29-copy {
 	height: 32px;

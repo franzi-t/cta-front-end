@@ -6,9 +6,8 @@
 </template>
 
 <style scoped>
-.ct-action {	
+.ct-action {
   float: right;
-  padding-right: 30px;
   height: 33px;	
   color: #FFFFFF;	
   font-family: "Open Sans";	
@@ -20,7 +19,6 @@
 
 .logo {	
   float: left;
-  padding-left: 20px;
   padding-top: 20px;
   height: 38px;
   width: 33px;

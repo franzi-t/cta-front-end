@@ -1,22 +1,44 @@
 <template>
   <div class="main-page-text">
     <div class="header-text">
-    <img class="btn-bg" src="../assets/icon expand.svg"> 
-    <h2 class="headlien-h-2-strong">Level</h2>
+      <img @click="toggle" 
+          class="btn-bg"
+          :class="{ 'open': !visible }"
+          src="../assets/icon expand.svg">
+      
+      <h2 class="headlien-h-2-strong">Level</h2>
     </div>
-    <div class="question-div">
+
+    <div v-if="visible" class="question-div">
       <p class="question">
         You have only one allowed endpoint - Product Projections. Some information resource told you that the company X created a product with radioactive ingredients called "Eggplant". 
 Which radioactive category belongs this product to?
       </p>
     </div>
-
     <div class="input-container">
       <input class="input" placeholder="Your answer" type="text">
       <img src="../assets/Button Answer default.svg" class="oval-29-copy">    
     </div>
-    </div>  
+
+  </div> 
+
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      visible: true
+    }
+  },
+  methods: {
+    toggle () {
+      this.visible = !this.visible
+    }
+  }
+}
+</script>
+
 
 <style lang="scss">
 .main-page-text{
@@ -34,11 +56,14 @@ Which radioactive category belongs this product to?
 }
 
 .btn-bg {
-  margin-top: 10px;
-	height: 25px;
-	width: 25px;
+  margin-top: 9px;
+	height: 26px;
+	width: 26px;
   &:hover{
     cursor: pointer;
+  }
+  &.open {
+    transform: rotate(-90deg);
   }
 }
 
@@ -101,5 +126,6 @@ input:focus {
     cursor: pointer;
   }
 }
+
 
 </style>

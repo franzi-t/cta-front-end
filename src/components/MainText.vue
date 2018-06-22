@@ -16,7 +16,7 @@ Which radioactive category belongs this product to?
       </p>
     </div>
     <div class="input-container">
-      <input class="input" placeholder="Your answer" type="text">
+      <input class="input" v-model="answer" placeholder="Your answer" type="text">
       <img
       @click="advanceLevel"
       src="../assets/Button Answer active.svg"
@@ -32,7 +32,8 @@ Which radioactive category belongs this product to?
 export default {
   data () {
     return {
-      visible: true
+      visible: true,
+      answer: 'abcd'
     }
   },
 
@@ -46,8 +47,8 @@ export default {
     },
 
     advanceLevel () {
-      this.$store.dispatch('advanceLevel').then(() => {
-
+      this.$store.dispatch('test', { levelcount: this.$store.state.levelCount, answer: this.answer }).then(() => {
+        // do nothing this.$store.state.levelCount
       })
     }
   }

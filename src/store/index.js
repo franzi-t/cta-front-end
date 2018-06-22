@@ -5,15 +5,21 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    levelCount: '',
+    levelCount: 3,
     levelDescription: '',
     levelDocs: '',
     result: '',
     answerCorrect: false,
-    answer: ''
+    answer: 'abc'
+
   },
 
   actions: {
+    test (context, obj) {
+      console.log(obj.a)
+      console.log(obj.b)
+    },
+
     advanceLevel (context, levelCount, answer) {
       return new Promise((resolve) => {
         this.$http.get('localhost:9000/answer/' + levelCount + '/' + answer)

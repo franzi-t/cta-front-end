@@ -14,9 +14,10 @@ export default new Vuex.Store({
   },
 
   actions: {
-    advanceLevel (context, levelCount, answer) {
+    advanceLevel (context, obj) {
       return new Promise((resolve) => {
-        this.$http.get('localhost:9000/answer/' + levelCount + '/' + answer)
+        console.log('I am Http')
+        this.$http.get('localhost:9000/answer/' + obj.levelCount + '/' + obj.answer)
         .then((response) => {
           context.commit('updateLevel', response.data.nextLevel)
           resolve()

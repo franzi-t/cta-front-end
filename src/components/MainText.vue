@@ -6,7 +6,7 @@
           :class="{ 'open': !visible }"
           src="../assets/icon expand.svg">
       
-      <h2 class="headlien-h-2-strong">Level {{levelCount}} </h2>
+      <h2 class="headlien-h-2-strong">Level </h2>
     </div>
 
     <div v-if="visible" class="question-div">
@@ -28,6 +28,7 @@ Which radioactive category belongs this product to?
 </template>
 
 <script>
+
 export default {
   data () {
     return {
